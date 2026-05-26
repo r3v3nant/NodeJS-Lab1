@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>REST API Task Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .task-form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+            .task-form input {
+                flex: 1;
+                padding: 8px;
+            }
+
+        .task-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+            .task-item.completed span {
+                text-decoration: line-through;
+                color: gray;
+            }
+
+        button {
+            cursor: pointer;
+            padding: 6px 12px;
+        }
+
+        .delete-btn {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Менеджер завдань</h1>
+
+    <div class="task-form">
+        <input type="text" id="taskTitle" placeholder="Введіть нове завдання...">
+        <button onclick="addTask()">Додати</button>
+    </div>
+
+    <div id="tasksList">Завантаження...</div>
+
+    <script>// При локальному запуску Netlify використовує порт 8888
+        const API_URL = "/.netlify/functions/tasks";
+
+        async function fetchTasks() {
+            try {
+                const response = await fetch(API_URL);
+                const tasks = await response.json();
+                const listContainer = document.getElementById("tasksList");
+                listContainer.innerHTML = "";
+
+                if(tasks.length === 0) {
+                    listContainer.innerHTML = "<p>Список порожній</p>";
+                    return;
+                }
+
+                tasks.forEach(task => {
+                    const div = document.createElement("div");
+                    div.className = `task-item ${task.completed ? 'completed' : ''}`;
+                    div.innerHTML = `
+                        <span onclick="toggleTask('${task._id}', ${task.completed})">${task.title}</span>
+                        <button class="delete-btn" onclick="deleteTask('${task._id}')">Видалити</button>
+                    `;
+                    listContainer.appendChild(div);
+                });
+            } catch (error) {
+                console.error("Помилка завантаження даних:", error);
+            }
+        }
+
+        async function addTask() {
+            const input = document.getElementById("taskTitle");
+            if (!input.value.trim()) return;
+
+            await fetch(API_URL, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ title: input.value })
+            });
+            input.value = "";
+            fetchTasks();
+        }
+
+        async function toggleTask(id, currentStatus) {
+            await fetch(`${API_URL}?id=${id}`, {
+                method: "PUT",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ completed: !currentStatus })
+            });
+            fetchTasks();
+        }
+
+        async function deleteTask(id) {
+            await fetch(`${API_URL}?id=${id}`, {
+                method: "DELETE"
+            });
+            fetchTasks();
+        }
+
+        // Перший запуск завантаження
+        fetchTasks();</script>
+</body>
+</html>
