@@ -1,7 +1,7 @@
 [build]
+  command = ""
   publish = "."
   functions = "functions"
 
 [dev]
-  # Наказуємо Netlify CLI ігнорувати службову папку .vs та інші заблоковані файли
   watch = ["functions", "index.html"]
