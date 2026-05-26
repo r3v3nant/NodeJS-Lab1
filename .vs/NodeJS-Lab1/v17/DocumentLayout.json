@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|solutionrelative:functions\\tasks.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|r:\\programming\\ncwt\\nodejs-lab1\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|solutionrelative:package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|r:\\programming\\ncwt\\nodejs-lab1\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|r:\\programming\\ncwt\\nodejs-lab1\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|r:\\programming\\ncwt\\nodejs-lab1\\netlify.toml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|solutionrelative:netlify.toml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|r:\\programming\\ncwt\\nodejs-lab1\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{ECB28F62-1FD6-0C71-460C-0F1EFB2D8898}|NodeJS-Lab1.esproj|solutionrelative:.env||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "package.json",
+              "DocumentMoniker": "R:\\Programming\\NCWT\\NodeJS-Lab1\\package.json",
+              "RelativeDocumentMoniker": "package.json",
+              "ToolTip": "R:\\Programming\\NCWT\\NodeJS-Lab1\\package.json",
+              "RelativeToolTip": "package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-05-26T22:01:26.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "index.html",
               "DocumentMoniker": "R:\\Programming\\NCWT\\NodeJS-Lab1\\index.html",
               "RelativeDocumentMoniker": "index.html",
@@ -42,12 +59,11 @@
               "RelativeToolTip": "index.html",
               "ViewState": "AgIAAFMAAAAAAAAAAAAAAHoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-05-26T21:14:03.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T21:14:03.598Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "netlify.toml",
               "DocumentMoniker": "R:\\Programming\\NCWT\\NodeJS-Lab1\\netlify.toml",
               "RelativeDocumentMoniker": "netlify.toml",
@@ -55,12 +71,11 @@
               "RelativeToolTip": "netlify.toml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-05-26T21:08:03.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T21:08:03.248Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": ".env",
               "DocumentMoniker": "R:\\Programming\\NCWT\\NodeJS-Lab1\\.env",
               "RelativeDocumentMoniker": ".env",
@@ -79,14 +94,14 @@
               "RelativeDocumentMoniker": "functions\\tasks.js",
               "ToolTip": "R:\\Programming\\NCWT\\NodeJS-Lab1\\functions\\tasks.js",
               "RelativeToolTip": "functions\\tasks.js",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAUwG4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAGoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-05-26T20:46:24.138Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "db.js",
               "DocumentMoniker": "R:\\Programming\\NCWT\\NodeJS-Lab1\\functions\\db.js",
               "RelativeDocumentMoniker": "functions\\db.js",
@@ -94,8 +109,7 @@
               "RelativeToolTip": "functions\\db.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-05-26T20:45:55.651Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-26T20:45:55.651Z"
             }
           ]
         }

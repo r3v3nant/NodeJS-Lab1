@@ -105,6 +105,7 @@ exports.handler = async (event) => {
                 return { statusCode: 405, headers: CORS_HEADERS, body: JSON.stringify({ error: "Method Not Allowed" }) };
         }
     } catch (error) {
+        console.error("œŒÃ»À ¿ ¡≈ ≈Õƒ”:", error);
         return { statusCode: 500, headers: CORS_HEADERS, body: JSON.stringify({ error: error.message }) };
     }
 };
